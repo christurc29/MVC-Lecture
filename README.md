@@ -1,6 +1,6 @@
 ## MVC Lecture: <a href="" target="_blank">Check it out here</a>
 
-<a href="https://boozgle.netlify.app" target="_blank"><img src="./src/images/MVC-lecture.gif"></a>
+<a href="https://mvc-lecture-jjk.netlify.app/" target="_blank"><img src="./src/images/MVC-lecture.gif"></a>
 
 ### Learn about Model-View-Controller (MVC) software architectural pattern!
 
