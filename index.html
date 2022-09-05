@@ -1,0 +1,190 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>MVC Lecture - Chris Turcios</title>
+    
+    <meta name="description" content="Presentation explaining the MVC model" />
+    <meta name="author" content="Chris Turcios" />
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<div id="impress"
+    data-transition-duration="1000"
+    
+    data-width="1024"
+    data-height="768"
+    data-max-scale="3"
+    data-min-scale="0"
+    data-perspective="1000"
+    
+    data-autoplay="0">
+
+    <div id="bored" class="step" data-x="-1300" data-y="-1500" data-autoplay="0" align="center">
+        <font size="10rem" style="position: relative; bottom: 60px"><q>What is <b>MVC</b> anyway? (featuring JJK!)</q></font>
+        <img src="./src/images/confused_itadori.webp">
+        
+    </div>
+
+    <div class="step slide" data-x="380" data-y="-1500" data-z="500" data-rotate="90">
+        <p>MVC stands for <strong>m</strong>odel-<strong>v</strong>iew-<strong>c</strong>ontroller. It's an architectural or design pattern that allows us to turn complex application development into a much more manageable process. This is <strong>especially</strong> important when several developers will simultaneously be working on the application.</p>
+        <br><br>
+        <strong><font size="40px">English, please? </font></strong>
+        <br><br>
+        <p>We are turning a big overwhelming thing into something that is organized into smaller more manageable pieces.</p>
+        <img style="position: relative; left: 50%; bottom: 10px;" src="./src/images/gojo_pointingup.webp">
+        
+
+    </div>
+
+    <div class="step slide" data-x="1500" data-y="-1500">
+        <strong><font size="10rem" style="position: relative; left: 25%">Let's break it down</font></strong>
+        <br><br>
+        <ul>
+            <li><strong>Model: </strong> The backend that contains all the data as well as any of its related logic. Think: database.</li>
+            <br>
+            <li><strong>View: </strong>The frontend or graphical user interface (GUI). What the user sees on their browser.</li>
+            <br>
+            <li><strong>Controller: </strong>The brains of the application. Acts as an interface between the Model and the View components.</li>
+        </ul>
+        <img style="position: relative; left: 25%" src="./src/images/dancing_gojo.webp">
+    </div>
+
+    <div id="its" style="line-height: 4rem" class="step" data-x="-800" data-y="2000" data-rotate="90" data-scale="5">
+        <strong><p style="text-align: center">Why Should You Use MVC?</p></strong>
+        <p style="text-align: center">Three words:</p>
+        <strong><p style="text-align: center">Separation of concerns (SoC)</p></strong>
+        <p style="text-align: center;" display="inline-block"><font size="5rem" style="line-height: 1px">The MVC pattern helps you separate the frontend and backend code. So, you can make changes to either side without necessarily affecting the other. This helps make updating, modifying, or debugging much more manageable.</font></p>
+        <br>
+        <p style="text-align:center">Let's go through the process of how it works in application: </p>
+        <img width="20%" style="position: relative; left: 40%" src="./src/images/arrow_pointingdown.gif">
+    </div>
+
+    <div id="step"  class="step" data-x="-5000" data-y="2000" data-rotate="90" data-scale="5">
+        <font size="4rem">
+            <ol>
+                <li>1. The <strong>user</strong> sits down at their computer and opens their browser. They enter in a URL or interact with a webpage and a <strong>user request</strong> is made.</li>
+                <br>
+                <li>2. The <strong>API (server)</strong> is intently waiting and listening for exactly these requests, and in fact will take different actions based on the route it's given via the request. (i.e."/home", "/login", etc).</li>
+                <br>
+                <li>3. Based on the route, the <strong>user request</strong> will be handed off <strong>to</strong> a designated <strong>Controller</strong> <strong>by</strong> the <strong>Router</strong>.</li>
+                <br>
+                <li>4. If the user's request involves <strong>retrieval of data</strong> then the <strong>Controller</strong> will <strong>instruct</strong> the <strong>Model</strong> to access the database where this data is stored.</li>
+                <br>
+                <li>5. The <strong>Model</strong> will <strong>return the data to the Controller.</strong></li>
+                <br>
+                <li>6. The <strong>Controller</strong> will <strong>hand off</strong> what it receives <strong>from</strong> the <strong>Model</strong> <strong>to</strong> the <strong>View</strong> and the webpage will either populate or update to reflect what the user requested.</li>
+            </ol>
+        </font>
+        <br>
+        <p style="text-align:center">Let's add a visual: </p>
+        <img style="position: absolute; top: 60%; right: 70%" src="./src/images/itadori-dancing.gif">
+        <img width="20%" style="position: relative; left: 40%" src="./src/images/arrow_pointingdown.gif">
+    </div>
+
+    <div id="step-5" class="step" data-x="-10000" data-y="2000" data-rotate="90" data-scale="4">
+        <img src="./src/images/MVC_Overview.png">
+    </div>
+
+    <div id="ing" class="step" data-x="7000" data-y="1800" data-z="0" data-rotate="90" data-scale="2">
+        <p style="font-size: 8rem"><b class="positioning">Quiz</b> <b class="rotating">Time</b> <b class="scaling">?</b></p>
+    </div>
+
+    <div class="step slide" data-x="2100" data-y="500" data-rotate="25" data-rotate-y="60">
+        <q>What does the <strong>M </strong>in MVC stand for, and what does it do?</q>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="500" data-rotate="25" data-rotate-y="60">
+        <q>Model. It stores, structures, and prepares data based on the controller's instructions.</q>
+    </div>
+
+    <div class="step slide" data-x="2100" data-y="1500" data-rotate="25" data-rotate-y="60">
+        <q>What does the <strong>V </strong>in MVC stand for, and what does it do?</q>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="1500" data-rotate="25" data-rotate-y="60">
+        <q>View. It is the what the user sees. What is displayed depends on the user's actions (requests).</q>
+    </div>
+
+    
+    <div class="step slide" data-x="2100" data-y="2500" data-rotate="25" data-rotate-y="60">
+        <q>What does the <strong>C </strong>in MVC stand for, and what does it do?</q>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="2500" data-rotate="25" data-rotate-y="60">
+        <p><font size="60%" style="line-height: 4rem">Controller. It acts as the interface between the View and Model components. It takes in user commands, sends commands to the model for data updates or retrieval, and sends instructions to the view to update the interface for the user.</font></p>
+    </div>
+
+    <!-- <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="4">
+        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    </div>
+
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>and <b>tiny</b> ideas</p>
+    </div> -->
+
+   
+
+    <div id="imagination" class="step" data-x="4900" data-y="-1500" data-scale="6" data-rotate-x="90">
+        <p style="text-align: center"><b class="imagination">Congratulations! </b>You will now be a much more organized, efficient developer.</p>
+        <img style="position: relative; left: 10%" width="70%" src="./src/images/JJK-dancing.gif">
+    </div>
+
+
+    <!--
+        
+        So to summarize of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    -->
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    </div>
+
+</div>
+
+<!--
+    This is a UI plugin. You can read more about plugins in src/plugins/README.md.
+    For now, I'll just tell you that this adds some graphical controls to navigate the
+    presentation. In the CSS file you can style them as you want. We've put them bottom right.
+-->
+<div id="impress-toolbar"></div>
+    
+<div class="hint">
+    <p>Use spacebar or arrow keys to navigate. <br/></p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
+
+
+
